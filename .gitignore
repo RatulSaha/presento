@@ -1,0 +1,29 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
+ 
+# PDF output - usually a bad idea to keep this in Git
+*.pdf
+
+# SyncTeX
+*.synctex.gz
+ 
+# LaTeX Beamer
+*.snm
+*.vrb
+*.nav
+*.out
+ 
+# BibTeX
+*.bbl
+*.blg
+
+# Sublime Text Project Files (usually contain absolute paths)
+*.sublime-project
+*.sublime-workspace
+
+# Backup files
+*~
+*.backup
+*.tex.backup

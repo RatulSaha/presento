@@ -1,0 +1,56 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{config/presento}[2014/08/08]
+\mode<presentation>
+
+% removing navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+
+
+% packages
+\PassOptionsToPackage{dvipsnames}{xcolor}
+	\RequirePackage{xcolor} % [dvipsnames]
+\usepackage{fontspec}
+\usepackage{setspace}
+	
+% colors
+\definecolor{colorone}{HTML}{E65100}
+\definecolor{colortwo}{HTML}{795548}
+\definecolor{colorthree}{HTML}{212121}
+
+% font families and sizes
+% 0.541
+% 0.618
+% 0.875
+% 1.618
+% 2.292
+% 2.618
+% 3.708
+
+\newcommand{\fontsizeone}{2.292em}
+\newcommand{\linespaceone}{1}
+\newcommand{\fontsizetwo}{1.618em}
+\newcommand{\fontsizethree}{0.875em}
+\newcommand{\fontfamilyone}{Proxima Nova Bold}
+\newcommand{\fontfamilytwo}{Noto Sans}
+
+% beamer template changes
+\setbeamercolor{normal text}{fg=colorthree} %tone down the default black to dark gray
+\setsansfont{\fontfamilytwo}
+
+% custom commands
+\newcommand{\settitle}[1]{
+  {
+  \begin{spacing}{\linespaceone}
+   \fontsize{\fontsizeone}{\fontsizeone}\fontspec{\fontfamilyone}\color{colorone}{#1}
+  \end{spacing}
+  }
+}
+
+\newcommand{\setsubtitle}[1]{
+ {\fontsize{\fontsizetwo}{\fontsizeone}\selectfont{#1}}
+}
+
+\newcommand{\setnote}[1]{
+ {\fontsize{\fontsizethree}{\fontsizeone}\selectfont\color{colortwo}{#1}}
+}
