@@ -19,8 +19,15 @@ Compulsory packages :
 - xcolor (colors)
 - fontspec (custom local fonts)
 - setspace (line height)
+- tikz (shape)
+- enumitem (bullte points)
+
+Fonts:
+- Proxima Nova Bold
+- Noto Sans
 
 Thanks to:
 - .gitignore-latex (https://gist.github.com/misberner/8316891)
 - Classicthesis (https://code.google.com/p/classicthesis/)
 - Tim Brown (http://modularscale.com)
+- Google Design (https://google.com/design)

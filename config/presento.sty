@@ -12,16 +12,22 @@
 	\RequirePackage{xcolor} % [dvipsnames]
 \usepackage{fontspec}
 \usepackage{setspace}
+\usepackage{tikz}
+\usepackage{enumitem}
 	
 % colors
-\definecolor{colorone}{HTML}{E65100}
-\definecolor{colortwo}{HTML}{795548}
-\definecolor{colorthree}{HTML}{212121}
+\definecolor{colorone}{HTML}{E65100} % orange
+\definecolor{colortwo}{HTML}{795548} % dark gray for note
+\definecolor{colorthree}{HTML}{212121} % heavy dark gray for normal text
+\definecolor{colorfour}{HTML}{009688} % green
+\definecolor{colorfive}{HTML}{FAFAFA} % background light gray
+\definecolor{colorsix}{HTML}{0277BB} % blue
 
 % font families and sizes
 % 0.541
 % 0.618
 % 0.875
+% 1.417
 % 1.618
 % 2.292
 % 2.618
@@ -29,12 +35,20 @@
 
 \newcommand{\fontsizeone}{2.292em}
 \newcommand{\linespaceone}{1}
-\newcommand{\fontsizetwo}{1.618em}
+\newcommand{\fontsizetwo}{1.217em}
 \newcommand{\fontsizethree}{0.875em}
 \newcommand{\fontfamilyone}{Proxima Nova Bold}
 \newcommand{\fontfamilytwo}{Noto Sans}
+\newcommand{\fontfamilythree}{Lato Light}
 
 % beamer template changes
+\setbeamertemplate{frametitle}{
+ \vspace{0.40em}
+ \noindent
+ \hspace{-1.2em}
+ \tikz[overlay,remember picture,baseline=0.3em]{\fill[fill=colorone]  (-0.3,0.05) rectangle (0,0.9); }\fontspec[Scale=1]{\fontfamilythree}\color{colorone}~~\insertframetitle%
+}
+\setbeamercolor{background canvas}{bg=colorfive}
 \setbeamercolor{normal text}{fg=colorthree} %tone down the default black to dark gray
 \setsansfont{\fontfamilytwo}
 
@@ -53,4 +67,16 @@
 
 \newcommand{\setnote}[1]{
  {\fontsize{\fontsizethree}{\fontsizeone}\selectfont\color{colortwo}{#1}}
+}
+
+\newcommand{\setcolorfour}[1]{{\color{colorfour}{#1}}}
+
+\newenvironment{fullpageitemize}
+  {\itemize[nolistsep,itemsep=\fill,leftmargin=*]}
+  {\vfill\enditemize}
+
+\newcommand{\rtarrow}{$\color{colorone}{\rightarrow}$}
+
+\newcommand{\itemR}{
+ \item[\rtarrow]
 }
