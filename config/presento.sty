@@ -33,13 +33,17 @@
 % 2.618
 % 3.708
 
+% font sizes
 \newcommand{\fontsizeone}{2.292em}
-\newcommand{\linespaceone}{1}
 \newcommand{\fontsizetwo}{1.217em}
 \newcommand{\fontsizethree}{0.875em}
+% line spaces
+\newcommand{\linespaceone}{1}
+% font families
 \newcommand{\fontfamilyone}{Proxima Nova Bold}
 \newcommand{\fontfamilytwo}{Noto Sans}
 \newcommand{\fontfamilythree}{Lato Light}
+
 
 % beamer template changes
 \setbeamertemplate{frametitle}{
@@ -71,12 +75,28 @@
 
 \newcommand{\setcolorfour}[1]{{\color{colorfour}{#1}}}
 
+\newenvironment{baseitemize}
+  {\itemize[leftmargin=*]}
+  {\enditemize}
+
 \newenvironment{fullpageitemize}
   {\itemize[nolistsep,itemsep=\fill,leftmargin=*]}
   {\vfill\enditemize}
-
+  
 \newcommand{\rtarrow}{$\color{colorone}{\rightarrow}$}
 
 \newcommand{\itemR}{
  \item[\rtarrow]
+}
+
+\newcommand{\framecard}[2]{
+  {\setbeamercolor{background canvas}{bg=#1}
+    \begin{frame}[plain,c]
+    \begin{center}
+%       \begin{spacing}{\linespaceone}
+	\fontsize{\fontsizeone}{\fontsizeone}\fontspec{\fontfamilyone}\color{white}{#2}
+%       \end{spacing}
+    \end{center}
+    \end{frame}
+  }
 }
