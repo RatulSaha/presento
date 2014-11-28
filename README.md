@@ -1,9 +1,12 @@
 presento
 ========
 
-Presento is a clean, simple and extensible theme for presentations — supported by XeTeX and Beamer. XeTeX is a TeX typesetting engine that can be [thought](http://tex.stackexchange.com/questions/3393/what-is-xetex-exactly-and-why-should-i-use-it) of as standard LaTeX (pdftex) with support for Open Type Fonts. Beamer is a widely used LaTeX class for presentations and slides.
+Presento is a clean, simple and extensible template for presentations — supported by XeTeX and Beamer. XeTeX is a TeX typesetting engine that can be [thought](http://tex.stackexchange.com/questions/3393/what-is-xetex-exactly-and-why-should-i-use-it) of as standard LaTeX (pdftex) with support for Open Type Fonts. Beamer is a widely used LaTeX class for presentations and slides.
 
-[Minimal demo](http://www.comp.nus.edu.sg/~ratul/public/presento.pdf)
+## Demo
+
+* [Minimal demo](http://www.comp.nus.edu.sg/~ratul/public/presento.pdf) (PDF)
+* A group [presentation](http://www.comp.nus.edu.sg/~ratul/public/BoS_final_presentation.pdf) (PDF) for a business class.
 
 ## Installation
 
