@@ -1,6 +1,6 @@
 \begin{frame}{Bullet Points with Caption}
  \begin{fullpageitemize}
-  \item \begin{center}\setsubtitle{Use \textsc{setsubtitle} for one line of text}\end{center}
+  \item \begin{center}\largetext{Use \textsc{largetext} for one line of text}\end{center}
   \item \begin{center}This slide has less text as well\end{center}
  \end{fullpageitemize}
 \end{frame}
@@ -14,4 +14,10 @@
  \end{fullpageitemize}
 \end{frame}
 
-\framecard{colorfour}{BIG BOLD TEXT}
+\framecard[colorgreen]{{\color{white}\hugetext{BIG BOLD TEXT}}}
+
+\framepic[0.8]{images/skeleton}{
+ \begin{textblock}{7}(7,2.5)
+    \color{colorblue}\hugetext{\textbf{RUN!}}
+ \end{textblock}
+}

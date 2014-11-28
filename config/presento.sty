@@ -1,37 +1,23 @@
-\NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{config/presento}[2014/08/08]
+\ProvidesPackage{config/presento}
 \mode<presentation>
 
 % removing navigation symbols
 \setbeamertemplate{navigation symbols}{}
 
-
-
 % packages
-\PassOptionsToPackage{dvipsnames}{xcolor}
-	\RequirePackage{xcolor} % [dvipsnames]
+\usepackage{xcolor}
 \usepackage{fontspec}
 \usepackage{setspace}
 \usepackage{tikz}
 \usepackage{enumitem}
-	
-% colors
-\definecolor{colorone}{HTML}{E65100} % orange
-\definecolor{colortwo}{HTML}{795548} % dark gray for note
-\definecolor{colorthree}{HTML}{212121} % heavy dark gray for normal text
-\definecolor{colorfour}{HTML}{009688} % green
-\definecolor{colorfive}{HTML}{FAFAFA} % background light gray
-\definecolor{colorsix}{HTML}{0277BB} % blue
 
-% font families and sizes
-% 0.541
-% 0.618
-% 0.875
-% 1.417
-% 1.618
-% 2.292
-% 2.618
-% 3.708
+% colors
+\definecolor{colororange}{HTML}{E65100} % orange
+\definecolor{colordgray}{HTML}{795548} % dark gray for note
+\definecolor{colorhgray}{HTML}{212121} % heavy dark gray for normal text
+\definecolor{colorgreen}{HTML}{009688} % green
+\definecolor{colorlgray}{HTML}{FAFAFA} % background light gray
+\definecolor{colorblue}{HTML}{0277BB} % blue
 
 % font sizes
 \newcommand{\fontsizeone}{2.292em}
@@ -39,41 +25,70 @@
 \newcommand{\fontsizethree}{0.875em}
 % line spaces
 \newcommand{\linespaceone}{1}
-% font families
-\newcommand{\fontfamilyone}{Proxima Nova Bold}
-\newcommand{\fontfamilytwo}{Noto Sans}
-\newcommand{\fontfamilythree}{Lato Light}
 
+% font families
+\newfontfamily{\montserratfont}[Path=fonts/,BoldFont=Montserrat-Bold]{Montserrat-Regular}
+\newfontfamily{\notosansfont}[Path=fonts/,BoldFont=NotoSans-Bold,ItalicFont=NotoSans-Italic,BoldItalicFont=NotoSans-BoldItalic,SmallCapsFont=AlegreyaSansSC-Regular]{NotoSans-Regular}
+\newfontfamily{\latolightfont}[Path=fonts/]{Lato-Lig}
+\newfontfamily{\inconsolatafont}[Path=fonts/]{Inconsolata}
 
 % beamer template changes
 \setbeamertemplate{frametitle}{
  \vspace{0.40em}
  \noindent
  \hspace{-1.2em}
- \tikz[overlay,remember picture,baseline=0.3em]{\fill[fill=colorone]  (-0.3,0.05) rectangle (0,0.9); }\fontspec[Scale=1]{\fontfamilythree}\color{colorone}~~\insertframetitle%
+ \tikz[overlay,remember picture,baseline=0.3em]{\fill[fill=colororange]  (-0.3,0.05) rectangle (0,0.9); }\latolightfont\color{colororange}~~\insertframetitle%
 }
-\setbeamercolor{background canvas}{bg=colorfive}
-\setbeamercolor{normal text}{fg=colorthree} %tone down the default black to dark gray
-\setsansfont{\fontfamilytwo}
+
+\setmainfont[Path=fonts/,BoldFont=NotoSans-Bold,ItalicFont=NotoSans-Italic,BoldItalicFont=NotoSans-BoldItalic,SmallCapsFont=AlegreyaSansSC-Regular]{NotoSans-Regular}
+\setsansfont[Path=fonts/,BoldFont=NotoSans-Bold,ItalicFont=NotoSans-Italic,BoldItalicFont=NotoSans-BoldItalic,SmallCapsFont=AlegreyaSansSC-Regular]{NotoSans-Regular}
+\setmonofont[Path=fonts/,SmallCapsFont=AlegreyaSansSC-Regular]{Inconsolata}
 
 % custom commands
-\newcommand{\settitle}[1]{
+\newcommand{\hugetext}[1]{
   {
   \begin{spacing}{\linespaceone}
-   \fontsize{\fontsizeone}{\fontsizeone}\fontspec{\fontfamilyone}\color{colorone}{#1}
+   \fontsize{\fontsizeone}{\fontsizeone}{\montserratfont #1}
   \end{spacing}
   }
 }
 
-\newcommand{\setsubtitle}[1]{
+\newcommand{\largetext}[1]{
  {\fontsize{\fontsizetwo}{\fontsizeone}\selectfont{#1}}
 }
 
 \newcommand{\setnote}[1]{
- {\fontsize{\fontsizethree}{\fontsizeone}\selectfont\color{colortwo}{#1}}
+ {\fontsize{\fontsizethree}{\fontsizeone}\selectfont\color{colordgray}{#1}}
 }
 
-\newcommand{\setcolorfour}[1]{{\color{colorfour}{#1}}}
+\newcommand{\rtarrow}{$\color{colororange}{\rightarrow}$}
+
+\newcommand{\itemR}{
+ \item[\rtarrow]
+}
+
+\newcommand{\framecard}[2][colorgreen]{
+  {\setbeamercolor{background canvas}{bg=#1}
+    \begin{frame}[plain]
+    \vfill
+    \begin{center}
+     {#2}
+    \end{center}
+    \vfill
+    \end{frame}
+  }
+}
+\newcommand{\framepic}[3][1]{
+  {
+    \usebackgroundtemplate{%
+    \tikz[overlay,remember picture] \node[opacity=#1, at=(current page.center)] {
+      \includegraphics[height=\paperheight,width=\paperwidth]{#2}};
+    }
+    \begin{frame}
+    #3
+    \end{frame}
+  }
+}
 
 \newenvironment{baseitemize}
   {\itemize[leftmargin=*]}
@@ -82,21 +97,3 @@
 \newenvironment{fullpageitemize}
   {\itemize[nolistsep,itemsep=\fill,leftmargin=*]}
   {\vfill\enditemize}
-  
-\newcommand{\rtarrow}{$\color{colorone}{\rightarrow}$}
-
-\newcommand{\itemR}{
- \item[\rtarrow]
-}
-
-\newcommand{\framecard}[2]{
-  {\setbeamercolor{background canvas}{bg=#1}
-    \begin{frame}[plain,c]
-    \begin{center}
-%       \begin{spacing}{\linespaceone}
-	\fontsize{\fontsizeone}{\fontsizeone}\fontspec{\fontfamilyone}\color{white}{#2}
-%       \end{spacing}
-    \end{center}
-    \end{frame}
-  }
-}
