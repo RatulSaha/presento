@@ -3,6 +3,8 @@ presento
 
 Presento is a clean, simple and extensible theme for presentations — supported by XeTeX and Beamer. XeTeX is a TeX typesetting engine that can be [thought](http://tex.stackexchange.com/questions/3393/what-is-xetex-exactly-and-why-should-i-use-it) of as standard LaTeX (pdftex) with support for Open Type Fonts. Beamer is a widely used LaTeX class for presentations and slides.
 
+[Minimal demo](http://www.comp.nus.edu.sg/~ratul/public/presento.pdf)
+
 ## Installation
 
 For novice TeX users, it is highly recommended to use [shareLaTeX](http://www.sharelatex.com/), a fascinating online TeX editor. The installation is as simple as downloading presento and uploading to shareLaTeX as a new project.
@@ -64,7 +66,7 @@ Please check the image size and aspect ratio. While not obligatory for any rules
 * The spacing and font sizes are carefully designed. Change font sizes by using `\fontsize{size}{leading}\selectfont` only if you are sure of what you are doing.
 
 #### Why does the text in my presentation look pale?
-* High contrast of black-white is not advisable for presenting with high quality projectors. Comment out the following in config/presento-config.tex if you are unsure about the quality of the projector and/or the text looks pale.
+* High contrast of black-white is not advisable for presenting with high quality projectors. If you are unsure about the quality of the projector and/or the text looks pale, comment out the following in config/presento-config.tex:
 ```
 \setbeamercolor{background canvas}{bg=colorlgray}
 \setbeamercolor{normal text}{fg=colorhgray}
