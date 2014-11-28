@@ -66,10 +66,10 @@ This work is not licensed. Feel free to use, modify, redistribute. Comments and 
 Please check the image size and aspect ratio. While not obligatory for any rules, you may want to note that the standard beamer template size is 12.8cm x 9.6cm.
 
 #### How do I change the font sizes?
-* The spacing and font sizes are carefully designed. Change font sizes by using `\fontsize{size}{leading}\selectfont` only if you are sure of what you are doing.
+The spacing and font sizes are carefully designed. Change font sizes by using `\fontsize{size}{leading}\selectfont` only if you are sure of what you are doing.
 
 #### Why does the text in my presentation look pale?
-* High contrast of black-white is not advisable for presenting with high quality projectors. If you are unsure about the quality of the projector and/or the text looks pale, comment out the following in config/presento-config.tex:
+High contrast of black-white is not advisable for presenting with high quality projectors. If you are unsure about the quality of the projector and/or the text looks pale, comment out the following in config/presento-config.tex:
 ```
 \setbeamercolor{background canvas}{bg=colorlgray}
 \setbeamercolor{normal text}{fg=colorhgray}
