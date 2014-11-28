@@ -3,7 +3,7 @@ presento
 
 Presento is a clean, simple and extensible theme for presentations - supported by XeTeX and Beamer. XeTeX is a TeX typesetting engine that can be [thought](http://tex.stackexchange.com/questions/3393/what-is-xetex-exactly-and-why-should-i-use-it) of as standard LaTeX (pdftex) with support for Open Type Fonts. Beamer is a widely used LaTeX class for presentations and slides.
 
-# Installation
+## Installation
 
 For novice TeX users, it is highly recommended to use [shareLaTeX](http://www.sharelatex.com/), a fascinating online TeX editor. The installation is as simple as downloading presento and uploading to shareLaTeX as a new project.
 
