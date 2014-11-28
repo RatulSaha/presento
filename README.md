@@ -48,6 +48,12 @@ The color palette is vibrant, bold yet minimal. The following colors can be used
 * `\begin{baseitemize} \end{baseitemize}`: This is standard itemize without any indentation. It should be used for normal listing.
 * `\begin{fullpageitemize} \end{fullpageitemize}`: This is used for listing in full frame. The items in the list are  properly spaced. It should be used for listing points in one full frame.
 
+## Concluding remarks
+
+The typography and design principles have been largly influenced by notable designers around the world. Sincere thanks goes to [Prof. Dr.-Ing. André Miede](http://www.miede.de/) (developer of [Classicthesis](https://code.google.com/p/classicthesis/)), Robert Bringhurst (author of 'The Elements of Typographic Style'), Richard Rutter (creator of The Elements of Typographic Style Applied to the Web), Tim Brown (developer of [Modular Scale](http://modularscale.com)), designers at [Google](https://google.com/design) among others.
+
+This work is not licensed. Feel free to use, modify, redistribute. Comments and suggestions are welcome!
+
 ## FAQ
 
 #### While using `\framepic`, why is the image not shown in full screen?
@@ -61,9 +67,3 @@ Please check the image size and aspect ratio. While not obligatory for any rules
 * High contrast of black-white is not advisable for presenting with high quality projectors. Comment out the following in config/presento-config.tex if you are unsure about the quality of the projector and/or the text looks pale.
 `\setbeamercolor{background canvas}{bg=colorlgray}`
 `\setbeamercolor{normal text}{fg=colorhgray}`
-
-## Concluding remarks
-
-The typography and design principles have been largly influenced by notable designers around the world. Sincere thanks goes to [Prof. Dr.-Ing. André Miede](http://www.miede.de/) (developer of [Classicthesis](https://code.google.com/p/classicthesis/)), Robert Bringhurst (author of 'The Elements of Typographic Style'), Richard Rutter (creator of The Elements of Typographic Style Applied to the Web), Tim Brown (developer of [Modular Scale](http://modularscale.com)), designers at [Google](https://google.com/design) among others.
-
-This work is not licensed. Feel free to use, modify, redistribute. Comments and suggestions are welcome!
