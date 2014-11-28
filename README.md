@@ -24,39 +24,46 @@ Except Noto Sans, which is licensed under Apache License v2.00, all other fonts 
 
 The fonts and their usage are already baked into the template. However for custom use, the following LaTeX commands (without any arguments) are provided: `\montserratfont`, `\notosansfont`, `\latolightfont`,`\inconsolatafont`.
 
-## Colors:
+## Colors
 
-* colorlgray: #FAFAFA (light gray)
-* colordgray: #795548 (dark gray)
-* colorhgray: #212121 (heavy dark gray)
-* colororange: #E65100 (orange)
-* colorgreen: #009688 (green)
-* colorblue: #0277BB (blue)
+The color palette is vibrant, bold yet minimal. The following colors can be used with the `\color{colorName}` command.
 
+* `colorlgray`: #FAFAFA (light gray)
+* `colordgray`: #795548 (dark gray)
+* `colorhgray`: #212121 (heavy dark gray)
+* `colororange`: #E65100 (orange)
+* `colorgreen`: #009688 (green)
+* `colorblue`: #0277BB (blue)
 
-Useful Macros:
+## Custom Macros
 
-- \hugetext{text}: sets the large, bold text. To be used for large and bold statements only.
-- \largetext{text}: sets a little larger text. To be used as subheadings in boy (not the title of the frame)
-- \setnote{text}: sets a smaller text with gray color. Can be used for showing notes such as url, references etc.
-- \framecard[optionalColor]{mainText} - Sets a big bold text at center with a background color, which is colorgreen by default.
+* `\hugetext{text}`: sets the huge, bold text. It should only be used for short and bold statements.
+* `\largetext{text}`: sets a large text. It should be used as subheadings, lines with less than 40 characters.
+* `\setnote{text}`: sets a smaller text with color gray. It should be used for showing notes such as url, references etc.
+* `\framecard[optionalColor]{mainText}` - Sets the big bold mainText at center with a background color of optionalColor, which is colorgreen by default. It should be used for flashing ideas, introducing subsections etc.
+* `\framepic[optionalOpacity]{image}{content}` - Sets the image as a background of the full frame with opacity set to optionalOpacity. The frame may have content inside.
 
-Custom environments:
-- baseitemize: Replacement of itemize without any indentation
-- fullpageitemize: use for full page, properly spaced list of items in a page
+## Custom environments
 
-Note to self:
-- Typography
-- Only em is used.
-- Modular typography?
-- Beamer template size: 12.8cm x 9.6cm
-- % Prefer to choose among {0.541, 0.618, 0.875, 1.417, 1.618, 2.292, 2.618, 3.708}, though not strict
-- comment out the following in config/presento.sty if the projector is not of high quality and the text looks pale
-   \setbeamercolor{background canvas}{bg=colorlgray}
-   \setbeamercolor{normal text}{fg=colorhgray}
+* `\begin{baseitemize} \end{baseitemize}`: This is standard itemize without any indentation. It should be used for normal listing.
+* `\begin{fullpageitemize} \end{fullpageitemize}`: This is used for listing in full frame. The items in the list are  properly spaced. It should be used for listing points in one full frame.
 
-Thanks to:
-- .gitignore-latex (https://gist.github.com/misberner/8316891)
-- Classicthesis (https://code.google.com/p/classicthesis/)
-- Tim Brown (http://modularscale.com)
-- Google Design (https://google.com/design)
+## FAQ
+
+#### While using `\framepic`, why is the image not shown in full screen?
+
+Please check the image size and aspect ratio. While not obligatory for any rules, you may want to note that the standard beamer template size is 12.8cm x 9.6cm.
+
+#### How do I change the font sizes?
+* The spacing and font sizes are carefully designed. Change font sizes by using `\fontsize{size}{leading}\selectfont` only if you are sure of what you are doing.
+
+#### Why does the text in my presentation look pale?
+* High contrast of black-white is not advisable for presenting with high quality projectors. Comment out the following in config/presento-config.tex if you are unsure about the quality of the projector and/or the text looks pale.
+`\setbeamercolor{background canvas}{bg=colorlgray}`
+`\setbeamercolor{normal text}{fg=colorhgray}`
+
+## Concluding remarks
+
+The typography and design principles have been largly influenced by notable designers around the world. Sincere thanks goes to [Prof. Dr.-Ing. André Miede](http://www.miede.de/) (developer of [Classicthesis](https://code.google.com/p/classicthesis/)), Robert Bringhurst (author of 'The Elements of Typographic Style'), Richard Rutter (creator of The Elements of Typographic Style Applied to the Web), Tim Brown (developer of [Modular Scale](http://modularscale.com)), designers at [Google](https://google.com/design) among others.
+
+This work is not licensed. Feel free to use, modify, redistribute. Comments and suggestions are welcome!
