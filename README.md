@@ -55,7 +55,7 @@ The color palette is vibrant, bold yet minimal. The following colors can be used
 
 ## Concluding remarks
 
-The typography and design principles have been largly influenced by notable designers around the world. Sincere thanks goes to [Prof. Dr.-Ing. André Miede](http://www.miede.de/) (developer of [Classicthesis](https://code.google.com/p/classicthesis/)), Robert Bringhurst (author of 'The Elements of Typographic Style'), Richard Rutter (creator of The Elements of Typographic Style Applied to the Web), Tim Brown (developer of [Modular Scale](http://modularscale.com)), designers at [Google](https://google.com/design) among others.
+The typography and design principles have been largly influenced by notable designers around the world. Sincere thanks goes to [Prof. Dr.-Ing. André Miede](http://www.miede.de/) (developer of [Classicthesis](https://code.google.com/p/classicthesis/)), Robert Bringhurst (author of 'The Elements of Typographic Style'), [Richard Rutter](http://clagnut.com/) (creator of The Elements of Typographic Style Applied to the Web), Tim Brown (developer of [Modular Scale](http://modularscale.com)), designers at [Google](https://google.com/design) among others.
 
 This work is not licensed. Feel free to use, modify, redistribute. Comments and suggestions are welcome!
 
