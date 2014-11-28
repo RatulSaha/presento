@@ -69,7 +69,7 @@ Please check the image size and aspect ratio. While not obligatory for any rules
 The spacing and font sizes are carefully designed. Change font sizes by using `\fontsize{size}{leading}\selectfont` only if you are sure of what you are doing.
 
 #### Why does the text in my presentation look pale?
-High contrast of black-white is not advisable for presenting with high quality projectors. If you are unsure about the quality of the projector and/or the text looks pale, comment out the following in config/presento-config.tex:
+High contrast of black-white is not advisable for presenting with high quality projectors. Thus the background is set to light gray and the text color is set to heavy dark gray. If you are unsure about the quality of the projector and/or the text looks pale, comment out the following in config/presento-config.tex:
 ```
 \setbeamercolor{background canvas}{bg=colorlgray}
 \setbeamercolor{normal text}{fg=colorhgray}
