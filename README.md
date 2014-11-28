@@ -1,13 +1,13 @@
 presento
 ========
 
-Presento is a clean, simple and extensible theme for presentations - supported by XeTeX and Beamer. XeTeX is a TeX typesetting engine that can be [thought](http://tex.stackexchange.com/questions/3393/what-is-xetex-exactly-and-why-should-i-use-it) of as standard LaTeX (pdftex) with support for Open Type Fonts. Beamer is a widely used LaTeX class for presentations and slides.
+Presento is a clean, simple and extensible theme for presentations — supported by XeTeX and Beamer. XeTeX is a TeX typesetting engine that can be [thought](http://tex.stackexchange.com/questions/3393/what-is-xetex-exactly-and-why-should-i-use-it) of as standard LaTeX (pdftex) with support for Open Type Fonts. Beamer is a widely used LaTeX class for presentations and slides.
 
 ## Installation
 
 For novice TeX users, it is highly recommended to use [shareLaTeX](http://www.sharelatex.com/), a fascinating online TeX editor. The installation is as simple as downloading presento and uploading to shareLaTeX as a new project.
 
-To use in your local computer, install XeTeX and the compulsory packages listed below. These mostly come as part of the popular TeX engines like [MiKTeX](http://miktex.org/).
+To use presento in your local computer, install XeTeX and the compulsory packages listed below. These mostly come as part of the popular TeX engines like [MiKTeX](http://miktex.org/).
 
 Compulsory packages:
 * `xcolor` (used for adding colors)
@@ -16,13 +16,22 @@ Compulsory packages:
 * `tikz` (used to draw for various shapes)
 * `enumitem` (custom lists)
 
-# Fonts
+## Fonts
 
-The primary fonts in use are Montserrat, Lato (Light) and Noto Sans. For small caps, Algreya Sans (small caps variation) is used. Inconsolata is used as a monospaced font.
+The primary fonts in use are [Montserrat](http://montserrat.zkysky.com.ar/en) by Julieta Ulanovsky, [Lato](http://www.latofonts.com/) (Light) by Łukasz Dziedzic and [Noto](https://www.google.com/get/noto) Sans by Google. For small caps, [Algreya Sans](http://www.huertatipografica.com/fonts/alegreya-sans-ht) (small caps variation) by Juan Pablo del Peral is used. [Inconsolata](http://en.wikipedia.org/wiki/Inconsolata) by Raph Levien is used as a monospaced font.
 
 Except Noto Sans, which is licensed under Apache License v2.00, all other fonts used are under SIL Open Font License v1.10. In short, all the fonts are free to use and redistribute under the terms of the respective licenses. 
 
-The usage of the fonts are already baked into the template. However, for custom use, the following custom LaTeX commands (without any arguments) are provided: `\montserratfont, \notosansfont, \latolightfont,\inconsolatafont`.
+The fonts and their usage are already baked into the template. However for custom use, the following LaTeX commands (without any arguments) are provided: `\montserratfont`, `\notosansfont`, `\latolightfont`,`\inconsolatafont`.
+
+## Colors:
+
+* colorlgray: #FAFAFA (light gray)
+* colordgray: #795548 (dark gray)
+* colorhgray: #212121 (heavy dark gray)
+* colororange: #E65100 (orange)
+* colorgreen: #009688 (green)
+* colorblue: #0277BB (blue)
 
 
 Useful Macros:
@@ -45,16 +54,6 @@ Note to self:
 - comment out the following in config/presento.sty if the projector is not of high quality and the text looks pale
    \setbeamercolor{background canvas}{bg=colorlgray}
    \setbeamercolor{normal text}{fg=colorhgray}
-
-
-Colors:
-- colorlgray: #FAFAFA % background light gray
-- colordgray: #795548 % dark gray for notes
-- colorhgray: #212121 % heavy dark gray for normal text (optional)
-- colororange: #E65100 % orange
-- colorgreen: #009688 % green
-- colorblue: #0277BB % blue
-
 
 Thanks to:
 - .gitignore-latex (https://gist.github.com/misberner/8316891)
