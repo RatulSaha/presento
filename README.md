@@ -5,7 +5,7 @@ Presento is a clean, simple and extensible template for presentations — suppor
 
 ## See in action
 
-* [Minimal demo](http://www.comp.nus.edu.sg/~ratul/public/presento.pdf) (PDF) --- compiled version of presento.tex
+* [Minimal demo](http://www.comp.nus.edu.sg/~ratul/public/presento.pdf) (PDF) — compiled version of presento.tex
 * A group [presentation](http://www.comp.nus.edu.sg/~ratul/public/BoS_final_presentation.pdf) (PDF) for a class project for a course on 'Business of Software'
 
 ## Installation
@@ -63,9 +63,9 @@ This work is not licensed. Feel free to use, modify, redistribute. Comments and 
 
 
 ##### How do I add customize the template?
-If you want to add new packages or newcommands, put them in config/custom-command.tex. You can change the title, subtitle etc in config/presento-config.tex.
+You can change the title, subtitle etc in config/presento-config.tex. If you want to add new packages or newcommands, put them in config/custom-command.tex. An example of `\usepackage{textpos}` etc are already present (but not compulsory for the basic template).
 
-However, if you want to _change_ the template, feel free to change config/presento.sty. Be brave!
+However, if you want to _change_ the template, feel free to modify config/presento.sty. Be brave!
 
 ##### While using `\framepic`, why is the image not shown in full screen?
 
