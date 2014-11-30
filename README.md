@@ -10,7 +10,7 @@ Presento is a clean, simple and extensible template for presentations — suppor
 
 ## Installation
 
-For novice TeX users, it is highly recommended to use [writeLaTeX](http://www.writelatex.com/), a fascinating online TeX editor. The installation is as simple as downloading presento and uploading to shareLaTeX as a new project.
+For novice TeX users, it is highly recommended to use [writeLaTeX](http://www.writelatex.com/), a fascinating online TeX editor. The installation is as simple as downloading presento and uploading to writeLaTeX as a new project.
 
 To use presento in your local computer, install XeTeX and the compulsory packages listed below. These mostly come as part of the popular TeX engines like [MiKTeX](http://miktex.org/).
 
