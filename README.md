@@ -7,6 +7,7 @@ Presento is a clean, simple and extensible template for presentations — suppor
 
 * [Minimal demo](http://www.comp.nus.edu.sg/~ratul/public/presento.pdf) (PDF) — compiled version of presento.tex
 * A group [presentation](http://www.comp.nus.edu.sg/~ratul/public/BoS_final_presentation.pdf) (PDF) for a class project for a course on 'Business of Software'
+* A research [presentation](http://www.comp.nus.edu.sg/~ratul/public/vmcai_presentation.pdf) on (broadly) theoretical computer science
 
 ## Installation
 
