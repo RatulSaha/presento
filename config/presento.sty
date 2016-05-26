@@ -47,7 +47,11 @@
 % frame counter
 \newcounter{totalfr}
 \setbeamertemplate{footline}{
-  \setcounter{totalfr}{\inserttotalframenumber}
+  \ifnum\inserttotalframenumber=1
+    \setcounter{totalfr}{2}
+  \else
+     \setcounter{totalfr}{\inserttotalframenumber}
+  \fi
   \hfill{
     \tikz{
       \filldraw[fill=colorblue!40, draw=colorblue!50]  (0,0) -- (0.2,0) arc (0:{\value{framenumber}*(360/(\value{totalfr}-1))}:0.2) -- (0,0); 
