@@ -5,9 +5,9 @@ Presento is a clean, simple and extensible template for presentations — suppor
 
 ## See in action
 
-* [Minimal demo](http://www.comp.nus.edu.sg/~ratul/public/presento.pdf) (PDF) — compiled version of presento.tex
-* A group [presentation](http://www.comp.nus.edu.sg/~ratul/public/BoS_final_presentation.pdf) (PDF) for a class project for a course on 'Business of Software'
-* A research [presentation](http://www.comp.nus.edu.sg/~ratul/public/vmcai_presentation.pdf) on (broadly) theoretical computer science
+* [Minimal demo](demo/presento.pdf) (PDF) — compiled version of presento.tex
+* A [group presentation](demo/BoS_final_presentation.pdf) (PDF) for a class project for a course on 'Business of Software'
+* A [research presentation](demo/setta_presentation.pdf) on (broadly) theoretical computer science
 
 ## Installation
 
@@ -26,7 +26,7 @@ Compulsory packages:
 
 The primary fonts in use are [Montserrat](http://montserrat.zkysky.com.ar/en) by Julieta Ulanovsky, [Lato](http://www.latofonts.com/) (Light) by Łukasz Dziedzic and [Noto](https://www.google.com/get/noto) Sans by Google. For small caps, [Algreya Sans](http://www.huertatipografica.com/fonts/alegreya-sans-ht) (small caps variation) by Juan Pablo del Peral is used. [Inconsolata](http://en.wikipedia.org/wiki/Inconsolata) by Raph Levien is used as a monospaced font.
 
-Except Noto Sans, which is licensed under Apache License v2.00, all other fonts used are under SIL Open Font License v1.10. In short, all the fonts are free to use and redistribute under the terms of the respective licenses. 
+Except Noto Sans, which is licensed under Apache License v2.00, all other fonts used are under SIL Open Font License v1.10. In short, all the fonts are free to use and redistribute under the terms of the respective licenses.
 
 The fonts and their usage are already baked into the template. However for custom use, the following LaTeX commands (without any arguments) are provided: `\montserratfont`, `\notosansfont`, `\latolightfont`,`\inconsolatafont`.
 
